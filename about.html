@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Aspire College</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.7), rgba(0, 0, 255, 0.7));
+    color: white;
+}
+
+.about-us {
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .image, .text {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .text p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .text p {
+        font-size: 0.9em;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="about-us">
+        <div class="container">
+            <h1>About Aspire College</h1>
+            <div class="content">
+                <div class="image">
+                    <img src="logo.jpeg" alt="Aspire College">
+                </div>
+                <div class="text">
+                    <p>Welcome to Aspire College, where we are committed to providing a high-quality education that empowers students to achieve their goals and aspirations. Our college offers a wide range of programs and courses designed to meet the needs of today's diverse and dynamic world.</p>
+                    <p>At Aspire College, we believe in fostering a supportive and inclusive learning environment that encourages personal growth and academic excellence. Our experienced faculty, state-of-the-art facilities, and innovative curriculum are all designed to help students succeed both in their studies and in their future careers.</p>
+                    <p>Join us at Aspire College and become a part of a vibrant community dedicated to excellence, innovation, and lifelong learning. Discover your potential and let us help you achieve your dreams.</p>
+                    <p>Our college is equipped with modern classrooms, laboratories, libraries, and sports facilities to ensure a well-rounded educational experience. We also provide various extracurricular activities, clubs, and societies to help students develop their interests and talents outside the classroom.</p>
+                    <p>Our mission is to inspire and nurture the next generation of leaders, thinkers, and innovators. We are proud of our diverse and inclusive community, where students from all backgrounds can come together to learn, grow, and achieve their full potential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

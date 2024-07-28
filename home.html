@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspire College - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Aspire College</a>
+            </div>
+            <ul>
+                <li><a href="form.html">Home</a></li>
+                <!-- <li><a href="form.html">Admissions</a></li> -->
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Aspire College</h1>
+        <p>Empowering students for a brighter future.</p>
+        <a href="form.html" class="btn">Apply Now</a>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Aspire College is dedicated to providing top-notch education and fostering a vibrant learning environment.</p>
+    </section>
+
+    <section class="programs">
+        <h2>Programs Offered</h2>
+        <div class="program-list">
+            <!-- Program details here -->
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial">
+            <p>"Aspire College has changed my life!" - Student Name</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aspire College. All rights reserved.</p>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        // For any JavaScript functionality, you can add it here
+document.addEventListener('DOMContentLoaded', () => {
+    // Example: Toggle mobile menu
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('nav ul');
+
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+});
+</script>
+</body>
+</html>

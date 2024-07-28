@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspire College Courses</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.7), rgba(0, 0, 255, 0.7));
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+main {
+    padding: 2rem;
+}
+
+.course-page {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.course-page.active {
+    display: block;
+    opacity: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.course-info img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    margin: auto;
+}
+
+.course-info img:hover {
+    transform: scale(1.05);
+}
+
+.text-content {
+    flex: 1;
+    max-width: 100%;
+    padding: 0 1rem;
+}
+
+.professors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.professor {
+    flex: 1 1 200px;
+    margin: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.professor img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.professor:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .course-info {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        margin-top: 1rem;
+    }
+
+    .professors {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .professor {
+        min-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .professor img {
+        max-width: 80px;
+    }
+
+    .text-content {
+        font-size: 0.9rem;
+    }
+}
+
+
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Our Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="#page1">Math</a></li>
+                <li><a href="#page2">Physics</a></li>
+                <li><a href="#page3">Chemistry</a></li>
+                <li><a href="#page4">Biology</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="page1" class="course-page active">
+            <h2>Mathematics</h2>
+            <div class="content">
+                <div class="course-info">
+                    <img src="bio.jpeg" alt="Mathematics Course">
+                    <div class="text-content">
+                        <p>This course covers advanced topics in mathematics including calculus, algebra, and statistics. Ideal for students who want to deepen their understanding of mathematical concepts.</p>
+                    </div>
+                </div>
+                <div class="professors">
+                    <h3>Meet Our Professors</h3>
+                    <div class="professor">
+                        <img src="https://via.placeholder.com/100?text=Prof+Smith" alt="Professor John Smith">
+                        <p>Professor John Smith - Specialist in Calculus and Algebra with over 15 years of teaching experience.</p>
+                    </div>
+                    <div class="professor">
+                        <img src="https://via.placeholder.com/100?text=Prof+Jones" alt="Professor Jane Jones">
+                        <p>Professor Jane Jones - Expert in Statistics and Mathematical Theory.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="page2" class="course-page">
+            <h2>Physics</h2>
+            <div class="content">
+                <div class="course-info">
+                    <img src="https://via.placeholder.com/600x400?text=Physics" alt="Physics Course">
+                    <div class="text-content">
+                        <p>This course explores classical mechanics, electromagnetism, and quantum physics. Suitable for students interested in the fundamental principles of physical science.</p>
+                    </div>
+                </div>
+                <div class="professors">
+                    <h3>Meet Our Professors</h3>
+                    <div class="professor">
+                        <img src="https://via.placeholder.com/100?text=Prof+Williams" alt="Professor Alice Williams">
+                        <p>Professor Alice Williams - Renowned physicist specializing in Quantum Mechanics and Particle Physics.</p>
+                    </div>
+                    <div class="professor">
+                        <img src="https://via.placeholder.com/100?text=Prof+Brown" alt="Professor Michael Brown">
+                        <p>Professor Michael Brown - Expert in Electromagnetism and Classical Mechanics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="page3" class="course-page">
+            <h2>Chemistry</h2>
+            <div class="content">
+                <div class="course-info">
+                    <img src="https://via.placeholder.com/600x400?text=Chemistry" alt="Chemistry Course">
+                    <div class="text-content">
+                        <p>Our chemistry course includes organic chemistry, inorganic chemistry, and physical chemistry. Designed for students who want to understand chemical processes and reactions.</p>
+                    </div>
+                </div>
+                <div class="professors">
+                    <h3>Meet Our Professors</h3>
+                    <div class="professor">
+                        <img src="https://via.placeholder.com/100?text=Prof+Green" alt="Professor Sarah Green">
+                        <p>Professor Sarah Green - Specialist in Organic Chemistry with extensive research experience.</p>
+                    </div>
+                    <div class="professor">
+                        <img src="https://via.placeholder.com/100?text=Prof+Taylor" alt="Professor James Taylor">
+                        <p>Professor James Taylor - Expert in Inorganic Chemistry and Chemical Engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="page4" class="course-page">
+            <h2>Biology</h2>
+            <div class="content">
+                <div class="course-info">
+                    <img src="https://via.placeholder.com/600x400?text=Biology" alt="Biology Course">
+                    <div class="text-content">
+                        <p>This course covers cellular biology, genetics, and ecology. Perfect for students interested in the study of living organisms and their interactions with the environment.</p>
+                    </div>
+                </div>
+                <div class="professors">
+                    <h3>Meet Our Professors</h3>
+                    <div class="professor">
+                        <img src="https://via.placeholder.com/100?text=Prof+Wilson" alt="Professor Emily Wilson">
+                        <p>Professor Emily Wilson - Expert in Genetics and Molecular Biology.</p>
+                    </div>
+                    <div class="professor">
+                        <img src="https://via.placeholder.com/100?text=Prof+White" alt="Professor Robert White">
+                        <p>Professor Robert White - Specialist in Ecology and Evolutionary Biology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
